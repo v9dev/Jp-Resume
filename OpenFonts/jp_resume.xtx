@@ -1,0 +1,228 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Jp - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% New author:
+% Jitendra Pratap Singh (https://design-of-jp.web.app/)
+%
+% Original repository:
+% https://github.com/v9dev/Jp-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{jp-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Jitendra Pratap}{Singh}{ \urlstyle{same}\href{https://design-of-jp.web.app/}{design-of-jp.web.app.dev}\\
+\href{mailto:imjpthakur@gmail.com}{imjpthakur@gmail.com} |9919951107 | \href{mailto:jsbankasiya@gmail.com}{jsbankasiya@gmail.com}} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{DR.RMLA University}
+\descript{BCA}
+\location{Oct 2024 | Ayodhya, India}
+\sectionsep
+
+\subsection{PTRBM IC}
+\descript{Intermediate}
+\location{Grad. June 2021 | Gonda, India}
+Science \\
+Mathematics\\
+\sectionsep
+
+\subsection{SDMP SCHOL}
+\descript{High School}
+\location{Grad. June 2017| Gonda, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/v9dev}{\bf v9dev} \\
+LinkedIn://  \href{https://linkedin.com/in/iamjpsingh}{\bf iamjpsingh} \\
+Instagram://  \href{https://www.instagram.com/namejxp}{\bf namejxp} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Web Design For Everybody (Specialization) \\
+Responsive Web Design (HTML, CSS, Flexbox, CSS Grid) \\
+Become a Graphics Designer \\
+Python For Everybody \\
+Google Technical Fundamental \\
+Cybersecurity Fundamental \\
+\sectionsep
+
+\subsection{Undergraduate}
+Google Cloud \\
+Microsoft Azure \\
+AWS \\
+Cloud Computing \\
+Functional Programming \\
+Computer Graphics \\
+Linux Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 10000 lines:}
+HTML \textbullet{}   CSS \  \\
+\location{Over 2000 lines:}
+C \textbullet{} C++ \textbullet{} Node \textbullet{} JavaScript \textbullet{} NoSQL  \\
+\location{Familiar:}
+Typescript \textbullet{} Python \textbullet{} Android \textbullet{} Web3 \textbullet{} MySQL \textbullet{} Angular \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Creative Skills}
+\subsection{Design}
+\location{Graphics:} Adobe Illustrator \textbullet{}  Adobe Photoshop \textbullet{} Canva \  \\
+\location{UI:} Adobe Xd \textbullet{}  Figma  \  \\
+
+\sectionsep
+
+\section{Experience}
+\runsubsection{Freelance}
+\descript{| Graphics Designer , UX Designer }
+\location{Dec 2022 - Present | Up, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Training and Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Training and Certifications}
+\runsubsection{30 Days of Google Cloud}
+\descript{| Learner }
+\location{Sep 2021 | UP, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item 30 Days of Google Cloud is a program that provides interactive labs and quizzes to teach you the core GCP services, such as App Engine, Kubernetes Engine, and BigQuery. By the end of the program, I had gained practical experience in deploying applications on GCP and managing them at scale.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{ Data Engineering, Big Data, and Machine Learning on GCP Specialization Certificate }
+\descript{| Learner }
+\location{ Dec 2022 | UP, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Building Resilient Streaming Analytics Systems on Google Cloud | Building Batch Data Pipelines on Google Cloud | Modernizing Data Lakes and Data Warehouses with Google Cloud | Google Cloud Big Data and Machine Learning Fundamentals | Smart Analytics, Machine Learning, and AI on Google Cloud
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ Google UX Design Specialization Professional Certificate}
+\descript{| Learner }
+\location{June 2023 | UP, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Create High-Fidelity Designs and Prototypes in Figma | Start the UX Design Process: Empathize, Define, and Ideate | Foundations of User Experience (UX) Design | Design a User Experience for Social Good and Prepare for Jobs | Build Wireframes and Low-Fidelity Prototypes | Conduct UX Research and Test Early Concepts | Responsive Web Design in Adobe XD
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Challenges} 
+\runsubsection{Azure Developer League: DevOps GitHub Challenge}
+\descript{| Completed}
+\location{Nov 2021 | UP, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item The DevOps GitHub Challenge teaches how to use GitHub and Azure DevOps for Continuous Integration and Continuous Deployment (CI/CD) pipelines. Through the program, I learned to build, test, and deploy applications on Azure using popular tools such as Docker, Kubernetes, and Visual Studio Code.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
