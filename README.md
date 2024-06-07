@@ -17,7 +17,7 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 ## Preview
 
 ### OpenFonts
-![alt tag]()
+![alt tag](https://github.com/v9dev/Jp-Resume/assets/99959044/71c4016e-00e8-44e7-956d-1cdea8d2cfa3)
 
 
 ## Dependencies
